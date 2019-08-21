@@ -1,0 +1,74 @@
+<html>
+    <head>
+    <title>Codebox</title>
+    <link rel="stylesheet" href="webp.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+
+            <div class="headz">
+                <div class="logo"><img src="hey.png" style="width:30px; margin-left: 10px; align-self:center;"><span style="font-size: 1.3em; margin-left: 5px;"> Codebox</span></div>
+                <a class="r" href="#" id="button">Log In / Register</a>
+                <a class="m" href="#secpart" id="about">About</a>
+            </div>
+
+
+
+
+            <div class="row-1">
+                <div class="col" id="fir">
+                    <img id="left-img" src="codebox.jpg">
+                </div>
+            </div>
+
+            <a name="secpart"></a>
+            <div class="row-2">
+                <div id="sec">
+                    <h2>Lorem Ipsum</h2>
+                    <br><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolor illum iusto soluta exercitationem aperiam vitae, dolorum nobis tempora ut voluptatum quaerat voluptate explicabo nulla culpa inventore nisi totam fuga. </p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut eaque voluptatem ipsum recusandae, totam excepturi esse sapiente aliquam dicta perspiciatis quas, suscipit veritatis hic eos molestias delectus. Molestiae, quam.</p><br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, eligendi</p><br><br>
+                    <button id="useless">Lorem Ipsum</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-modal">
+                <div class="modal-contents">
+            
+                    <div class="close">+</div>
+                    <img src="ok.jpg" id="batty" alt="">
+            
+                    <form action="" method="GET">
+                        <button class="loginBtn loginBtn--google">Continue with Google</button><br>
+                        <button class="loginBtn loginBtn--facebook">Continue with Facebook</button>
+                        <br>
+                        <p>Or</p>
+                        <hr>
+                        <br>
+                        <p>Use your email address</p><br>
+                        <a href="layout-2.html" class="button" id="login">Login</a>
+                        <a href="#" id= "signup">Sign Up</a>
+                    </form>
+            
+                </div>
+        </div>
+
+        <script>
+        document.getElementById('button').addEventListener("click", function() {
+	    document.querySelector('.bg-modal').style.display = "flex";
+        });
+
+        document.querySelector('.close').addEventListener("click", function() {
+	    document.querySelector('.bg-modal').style.display = "none";
+        });
+        </script>
+
+        
+    </body>
+</html>

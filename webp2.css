@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Livvic', sans-serif;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: auto;
+    color:white;
+    min-height: 100%;
+}
+
+.headz{
+    padding: 20px 0px;
+    background-color:#263238;
+    box-shadow: 1px 3px 5px black;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.r {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    float: right;
+    margin-right: 30px;
+}
+
+body {
+
+    background-color:#37474F;
+        /*background-image: url("19567.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;*/
+}
+
+
+/*.row {
+    display: flex;
+}*/
+
+.logo {
+    align-items: center;
+    display: inline-flex;
+}
+
+.leftCol {
+    float: left;
+    padding: 80px;
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.rightCol {
+    float:left;
+    width:75%;
+    padding: 80px;
+    margin: 0 auto;
+}
+
+.white {
+    margin-top: 50px;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    height: 500px;
+}
+
+section {
+    text-align: right;
+    margin-top: 1%;
+    margin-right: 10%;
+}
+
+.utibuttons {
+    border: none;
+    background-color: #37474F;
+    padding: 2px 6px;
+    width: 7%;
+    color: white;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+
+#btnr1 {
+    margin: 18px 0 0 6px;
+    width: 35px;
+    font-size: 0.7em;
+    border: none;
+    background-color: #cbcbcb;
+}
+
+h2 {
+    margin: 20px auto 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: white;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#btnl1 {
+    width: 250px;
+    margin: 0 auto;
+    padding: 6px 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+}
+
+#btnl2 {
+    background-color: #37474F;
+    border: 1px dashed grey;
+    padding: 6px 10px;
+    text-align: center;
+    color: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .leftCol
+    {
+        width: 100%;
+    }
+
+    .rightCol {
+
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .leftCol
+    {
+        width: 100%;
+    }
+
+    .rightCol {
+
+        width: 100%;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    #btnl1, #btnl2 {
+        margin: 0 auto;
+    }
+
+    .utibuttons {
+        width: 40px;
+        margin: 0 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.utibuttons:hover {
+    background-color: white;
+    color:#263238;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(3px, 0px) rotate(0deg); }
+    10% { transform: translate(2px, 0px) rotate(0deg); }
+    20% { transform: translate(1px, 0px) rotate(0deg); }
+    30% { transform: translate(0px, 0px) rotate(0deg); }
+    40% { transform: translate(-1px, 0px) rotate(0deg); }
+    50% { transform: translate(-2px, 0px) rotate(0deg); }
+    60% { transform: translate(-3px, 0px) rotate(0deg); }
+    70% { transform: translate(-2px, 0px) rotate(0deg); }
+    80% { transform: translate(-1px, 0px) rotate(0deg); }
+    90% { transform: translate(0px, 0px) rotate(0deg); }
+    100% { transform: translate(2px, 0px) rotate(0deg); }
+  }
+
+#btnl2:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.r:hover {
+    animation: bounce 0.8s;
+}
