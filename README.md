@@ -1,3 +1,3 @@
 # Recruitment-Test
 
-Recruitement Test task for Coding Club
+Recruitment Test task for Coding Club
