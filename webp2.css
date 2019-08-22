@@ -115,9 +115,10 @@ hr {
     margin: 0 auto;
 }
 
-#btnl1 {
+.btnl1 {
     width: 250px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
+    margin-left: auto;
     padding: 6px 10px;
     text-align: center;
     border-radius: 8px;
@@ -145,6 +146,16 @@ hr {
 
         width: 100%;
     }
+
+    .white {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .utibuttons {
+        width: 60px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -163,8 +174,8 @@ hr {
         text-align: center;
     }
 
-    #btnl1, #btnl2 {
-        margin: 0 auto;
+    .btnl1, #btnl2 {
+        margin: 0 auto 10px;
     }
 
     .utibuttons {
@@ -172,6 +183,11 @@ hr {
         margin: 0 15px;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .white {
+        width:100%;
+        margin: 0 auto;
     }
 }
 
